@@ -1,0 +1,19 @@
+{
+  "name": "@easyatworkas/frontend-models",
+  "version": "1.0.0",
+  "description": "Models that corresponds to the API that we can use in our frontend apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easyatworkas/frontend-models.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easyatworkas/frontend-models/issues"
+  },
+  "homepage": "https://github.com/easyatworkas/frontend-models#readme"
+}

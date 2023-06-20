@@ -1,8 +1,8 @@
 import { CustomFieldBase, CustomFieldBaseResponse } from './custom-field-base';
 import {CustomFieldPivotResponse} from './custom-field-pivot';
-import {mockCustomFieldPivot} from './custom-field-pivot.mock';
+import {mockCustomFieldPivotResponse} from './custom-field-pivot.mock';
 
-export function mockCustomFieldBaseResponse(data: Partial<CustomFieldBaseResponse> = {}, pivot?: Partial<CustomFieldPivotResponse>) {
+export function mockCustomFieldBaseResponse(data: Partial<CustomFieldBaseResponse> = {}, pivot: Partial<CustomFieldPivotResponse> = {}) {
     return {
         created_at: '',
         deleted_at: null,
@@ -11,7 +11,7 @@ export function mockCustomFieldBaseResponse(data: Partial<CustomFieldBaseRespons
         key: '',
         model: 'employee',
         name: '',
-        pivot: mockCustomFieldPivot(pivot),
+        pivot: mockCustomFieldPivotResponse(pivot),
         to: null,
         type: 'string',
         updated_at: '',

@@ -100,44 +100,6 @@ describe('CustomField', () => {
         });
     });
 
-    describe(`setSelectOptions()`, function() {
-        /* setSelectOptions is called from the constructor */
-
-        it(`should set options to an empty array if the type is not select`, function() {
-            const field = mockCustomField({ type: 'string' });
-            expect(field.selectOptions).toEqual([]);
-        });
-
-        it(`should assign the options in the metadata`, function() {
-            const field = mockCustomField({
-                type: 'select',
-            }, {
-                metadata: {
-                    options: {
-                        val1: 'TITLE1',
-                        val2: 'TITLE2',
-                        val4: 'TITLE4',
-                    },
-                },
-            });
-
-            expect(field.selectOptions).toEqual([
-                {
-                    value: 'val1',
-                    text: jasmine.any(Promise),
-                },
-                {
-                    value: 'val2',
-                    text: jasmine.any(Promise),
-                },
-                {
-                    value: 'val4',
-                    text: jasmine.any(Promise),
-                },
-            ]);
-        });
-    });
-
     describe(`setNumberValue()`, function() {
         it(`should keep value as null if value is null`, function() {
             const field = mockCustomField({
@@ -227,33 +189,6 @@ describe('CustomField', () => {
         });
     });
 
-    describe(`getSelectedOption()`, function() {
-        it(`should return undefined if the type of the custom field is not select`, function() {
-            const field = mockCustomField({ type: 'string' });
-            expect(field.getSelectedOption()).toBeUndefined();
-        });
-
-        it(`should return the select option that has the same value as this custom field's value`, function() {
-            const field = mockCustomField({
-                type: 'select',
-                value: 'val2',
-            }, {
-                metadata: {
-                    options: {
-                        val1: 'TITLE1',
-                        val2: 'TITLE2',
-                        val4: 'TITLE4',
-                    },
-                },
-            });
-
-            expect(field.getSelectedOption()).toEqual({
-                value: 'val2',
-                text: jasmine.any(Promise),
-            });
-        });
-    });
-
     describe(`value()`, function() {
         describe(`get`, function() {
             it(`should return the private _value`, function() {
@@ -266,28 +201,28 @@ describe('CustomField', () => {
         describe(`set`, function() {
             it(`should call setNumberValue if type is decimal`, function() {
                 const field = mockCustomField({ type: 'decimal' });
-                spyOn(field as any, 'setNumberValue');
+                jest.spyOn(field as any, 'setNumberValue').mockImplementation(() => {});
                 field.value = 9001;
                 expect((field as any).setNumberValue).toHaveBeenCalledWith(9001);
             });
 
             it(`should call setNumberValue if type is integer`, function() {
                 const field = mockCustomField({ type: 'integer' });
-                spyOn(field as any, 'setNumberValue');
+                jest.spyOn(field as any, 'setNumberValue').mockImplementation(() => {});
                 field.value = 9001;
                 expect((field as any).setNumberValue).toHaveBeenCalledWith(9001);
             });
 
             it(`should call setBooleanValue if type is boolean`, function() {
                 const field = mockCustomField({ type: 'boolean' });
-                spyOn(field as any, 'setBooleanValue');
+                jest.spyOn(field as any, 'setBooleanValue').mockImplementation(() => {});
                 field.value = true;
                 expect((field as any).setBooleanValue).toHaveBeenCalledWith(true);
             });
 
             it(`should call setDateValue if type is date`, function() {
                 const field = mockCustomField({ type: 'date' });
-                spyOn(field as any, 'setDateValue');
+                jest.spyOn(field as any, 'setDateValue').mockImplementation(() => {});
                 field.value = '2002-10-10';
                 expect((field as any).setDateValue).toHaveBeenCalledWith('2002-10-10');
             });

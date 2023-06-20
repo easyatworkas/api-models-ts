@@ -69,7 +69,7 @@ export class CustomField extends CustomFieldBase {
 
     pivot: CustomFieldPivot;
     // Formatted and pretty select options
-    selectOptions: { value: string, text: Promise<string> }[] = [];
+    selectOptions: { value: string, textNs: string, textKey: string }[] = [];
     from: DateTime | null;
     to: DateTime | null;
     // Can the user create a new value for this field?
@@ -97,7 +97,7 @@ export class CustomField extends CustomFieldBase {
         this._originalValue = data.value;
 
         // Other functions
-        // this.setSelectOptions();
+        this.setSelectOptions();
     }
 
     // Returns the value as a string, or null if the value is null
@@ -145,15 +145,15 @@ export class CustomField extends CustomFieldBase {
         return options || {};
     }
 
-    // private setSelectOptions() {
-    //     this.selectOptions = Object.entries(this.getSelectOptions()).map(([ key, value ]) => {
-    //         return {
-    //             value: key,
-    //             textNs: this.translationNs,
-    //             textKey: value,
-    //         };
-    //     });
-    // }
+    private setSelectOptions() {
+        this.selectOptions = Object.entries(this.getSelectOptions()).map(([ key, value ]) => {
+            return {
+                value: key,
+                textNs: this.translationNs,
+                textKey: value,
+            };
+        });
+    }
 
     private setNumberValue(value: unknown) {
         if (value == null) {

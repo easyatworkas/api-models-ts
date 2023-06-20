@@ -21,9 +21,11 @@ export class CustomFieldBase {
     id: number;
     key: string;
     name: string;
+    type: CustomFieldType;
     // This is the same as name, but just makes it easier to understand and use
     translationKey: string;
-    type: CustomFieldType;
+    // This is the place where we store the translations for custom fields
+    readonly translationNs = 'custom_fields';
     createdAt: DateTime;
     updatedAt: DateTime;
     deletedAt: DateTime | null;

@@ -1,7 +1,11 @@
 {
   "compileOnSave": false,
-  "include": ["./models/**/*"],
-  "exclude": ["./models/**/*.spec.ts"],
+  "include": [
+    "./src/models/**/*"
+  ],
+  "exclude": [
+    "./src/models/**/*.spec.ts"
+  ],
   "compilerOptions": {
     "resolveJsonModule": true,
     "esModuleInterop": true,

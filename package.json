@@ -19,12 +19,12 @@
   "homepage": "https://github.com/easyatworkas/frontend-models#readme",
   "dependencies": {
     "@ctrl/tinycolor": "^3.6.0",
-    "i18next": "^23.2.0",
     "lodash-es": "^4.17.21",
     "luxon": "^3.3.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
+    "@types/luxon": "^3.3.0",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
     "eslint": "^8.43.0",

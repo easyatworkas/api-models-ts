@@ -1,5 +1,5 @@
-import {ApiResponse} from '@easyatworkas/frontend-models/dist/interfaces/api-response';
 import {CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue} from '../models/custom-field';
+import {ApiResponse} from '../interfaces/api-response';
 
 /**
  * The purpose of this is to extend API models with simple functionality that don't interfere with the model or response in any big way.

@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { ApiResponse } from '@easyatworkas/frontend-models/dist/interfaces/api-response';
+import { ApiResponse } from '../interfaces/api-response';
 export interface LanguageResponse extends ApiResponse {
     code: string;
     ietf_bcp47_tag: string;

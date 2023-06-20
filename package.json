@@ -1,6 +1,6 @@
 {
   "name": "@easyatworkas/frontend-models",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Models that corresponds to the API that we can use in our frontend apps",
   "main": "index.js",
   "scripts": {

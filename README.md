@@ -1,4 +1,4 @@
-# frontend-models
+# api-models-ts
 Models that corresponds to the API that we can use in our frontend apps
 
 ### How to test / link locally

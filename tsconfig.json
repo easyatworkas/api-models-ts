@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "include": ["./models/**/*"],
+  "exclude": ["./models/**/*.spec.ts"],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "outDir": "dist",
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "sourceMap": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "module": "es2020",
+    "target": "ES2022",
+    "lib": [
+      "es2021",
+      "DOM"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": false,
+    "noImplicitAny": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

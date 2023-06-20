@@ -4,16 +4,29 @@
   "description": "Models that corresponds to the API that we can use in our frontend apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easyatworkas/frontend-models.git"
   },
-  "author": "",
+  "author": "han003",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/easyatworkas/frontend-models/issues"
   },
-  "homepage": "https://github.com/easyatworkas/frontend-models#readme"
+  "homepage": "https://github.com/easyatworkas/frontend-models#readme",
+  "dependencies": {
+    "@ctrl/tinycolor": "^3.6.0",
+    "i18next": "^23.2.0",
+    "lodash-es": "^4.17.21",
+    "luxon": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3"
+  }
 }

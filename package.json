@@ -1,6 +1,6 @@
 {
-  "name": "@easyatworkas/frontend-models",
-  "version": "1.0.3",
+  "name": "@easyatworkas/api-models-ts",
+  "version": "1.0.0",
   "description": "Models that corresponds to the API that we can use in our frontend apps",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easyatworkas/frontend-models.git"
+    "url": "git+https://github.com/easyatworkas/api-models-ts.git"
   },
   "author": "han003",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/easyatworkas/frontend-models/issues"
+    "url": "https://github.com/easyatworkas/api-models-ts/issues"
   },
-  "homepage": "https://github.com/easyatworkas/frontend-models#readme",
+  "homepage": "https://github.com/easyatworkas/api-models-ts#readme",
   "dependencies": {
     "@ctrl/tinycolor": "^3.6.0",
     "lodash-es": "^4.17.21",

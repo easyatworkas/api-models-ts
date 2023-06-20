@@ -1,4 +1,4 @@
-import {ApiResponse} from '../interfaces/api-response';
+import {ApiResponse} from '@easyatworkas/frontend-models/dist/interfaces/api-response';
 import {CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue} from '../models/custom-field';
 
 /**

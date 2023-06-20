@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 import {CustomFieldModel} from './custom-field';
-import {ApiResponse} from '../interfaces/api-response';
+import {ApiResponse} from '@easyatworkas/frontend-models/dist/interfaces/api-response';
 import {stringToDateTime} from '../utils/string-to-date-time';
 
 export interface CustomFieldPivotResponse extends ApiResponse {

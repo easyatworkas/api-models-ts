@@ -1,6 +1,5 @@
 {
   "name": "@easyatworkas/api-models-ts",
-  "private": true,
   "version": "1.0.1",
   "description": "Models that corresponds to the API that we can use in our frontend apps",
   "main": "index.js",

@@ -1,8 +1,9 @@
 {
   "name": "@easyatworkas/api-models-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Models that corresponds to the API that we can use in our frontend apps",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc"

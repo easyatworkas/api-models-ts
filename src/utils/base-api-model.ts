@@ -1,4 +1,4 @@
-import {CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue} from '../models/custom-field';
+import {CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue} from '../models/custom-field/custom-field';
 import {ApiResponse} from '../interfaces/api-response';
 
 /**

@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import {CustomFieldModel} from './custom-field';
+import {CustomFieldModel} from './custom-field/custom-field';
 import {stringToDateTime} from '../utils/string-to-date-time';
 import {ApiResponse} from '../interfaces/api-response';
 

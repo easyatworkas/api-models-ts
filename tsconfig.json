@@ -8,10 +8,10 @@
   ],
   "compilerOptions": {
     "esModuleInterop": true,
-    "outFile": "dist/index.js",
+    "outFile": "index.js",
     "strict": true,
     "allowJs": true,
-    "module": "system",
+    "module": "amd",
     "moduleResolution": "Node",
     "declaration": true,
     "target": "es6",

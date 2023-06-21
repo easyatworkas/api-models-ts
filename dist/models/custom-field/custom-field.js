@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CustomField = void 0;
 const luxon_1 = require("luxon");
-const custom_field_pivot_1 = require("../custom-field-pivot");
-const custom_field_base_1 = require("../custom-field-base");
+const custom_field_pivot_1 = require("../custom-field-pivot/custom-field-pivot");
+const custom_field_base_1 = require("../custom-field-base/custom-field-base");
 const string_to_date_time_1 = require("../../utils/string-to-date-time");
 const business_date_1 = require("../../utils/business-date");
 /**

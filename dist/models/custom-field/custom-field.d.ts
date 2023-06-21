@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import { CustomFieldPivot, CustomFieldPivotResponse } from '../custom-field-pivot';
-import { CustomFieldBase, CustomFieldBaseResponse } from '../custom-field-base';
+import { CustomFieldPivot, CustomFieldPivotResponse } from '../custom-field-pivot/custom-field-pivot';
+import { CustomFieldBase, CustomFieldBaseResponse } from '../custom-field-base/custom-field-base';
 import { BusinessDate } from '../../utils/business-date';
 import { BusinessDateString } from '../../types/business-date-string';
 export type CustomFieldModel = 'employee' | 'absence' | 'emergency_contact' | 'paid_time' | 'shift' | 'contract';
@@ -15,7 +15,7 @@ export interface CustomFieldResponse extends CustomFieldBaseResponse {
  * Custom field when it's attached to a model
  */
 export declare class CustomField extends CustomFieldBase {
-    private readonly _response;
+    readonly _response: CustomFieldResponse;
     get active(): boolean;
     get isModified(): boolean;
     private readonly _originalValue;

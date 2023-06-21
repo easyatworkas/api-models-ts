@@ -1,5 +1,5 @@
 import { CustomFieldBase, CustomFieldBaseResponse } from './custom-field-base';
-import { CustomFieldPivotResponse } from './custom-field-pivot';
+import { CustomFieldPivotResponse } from '../custom-field-pivot/custom-field-pivot';
 export declare function mockCustomFieldBaseResponse(data?: Partial<CustomFieldBaseResponse>, pivot?: Partial<CustomFieldPivotResponse>): {
     id: number;
     key: string;
@@ -16,7 +16,7 @@ export declare function mockCustomFieldBaseResponse(data?: Partial<CustomFieldBa
         has_interval: boolean;
         id: number;
         metadata: Record<string, any> | null;
-        model: import("./custom-field/custom-field").CustomFieldModel;
+        model: import("../custom-field/custom-field").CustomFieldModel;
         object_id: number;
         object_type: string;
         required: boolean;

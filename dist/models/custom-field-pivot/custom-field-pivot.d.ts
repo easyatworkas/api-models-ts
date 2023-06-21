@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import { CustomFieldModel } from './custom-field/custom-field';
-import { ApiResponse } from '../interfaces/api-response';
+import { CustomFieldModel } from '../custom-field/custom-field';
+import { ApiResponse } from '../../interfaces/api-response';
 export interface CustomFieldPivotResponse extends ApiResponse {
     custom_field_id: number;
     default: string | null;

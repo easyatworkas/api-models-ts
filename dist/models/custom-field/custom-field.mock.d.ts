@@ -1,5 +1,5 @@
 import { CustomField, CustomFieldResponse } from './custom-field';
-import { CustomFieldPivotResponse } from '../custom-field-pivot';
+import { CustomFieldPivotResponse } from '../custom-field-pivot/custom-field-pivot';
 export declare function mockCustomFieldResponse(data?: Partial<CustomFieldResponse>, pivot?: Partial<CustomFieldPivotResponse>): {
     from: string | null;
     pivot: {
@@ -21,7 +21,7 @@ export declare function mockCustomFieldResponse(data?: Partial<CustomFieldRespon
     id: number;
     key: string;
     name: string;
-    type: import("../custom-field-base").CustomFieldType;
+    type: import("../custom-field-base/custom-field-base").CustomFieldType;
     created_at: string;
     updated_at: string;
     deleted_at: string | null;

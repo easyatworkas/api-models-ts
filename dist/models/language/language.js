@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Language = void 0;
-const string_to_date_time_1 = require("../utils/string-to-date-time");
+const string_to_date_time_1 = require("../../utils/string-to-date-time");
 class Language {
     constructor(data) {
         this.languageTag = data === null || data === void 0 ? void 0 : data.ietf_bcp47_tag;

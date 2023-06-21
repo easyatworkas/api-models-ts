@@ -19,7 +19,7 @@ export interface CustomFieldResponse extends CustomFieldBaseResponse {
  * Custom field when it's attached to a model
  */
 export class CustomField extends CustomFieldBase {
-    private readonly _response: CustomFieldResponse;
+    readonly _response: CustomFieldResponse;
 
     // Is this field active atm?
     get active(): boolean {

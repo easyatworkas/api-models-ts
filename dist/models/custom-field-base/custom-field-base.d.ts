@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import { ApiResponse } from '../interfaces/api-response';
+import { ApiResponse } from '../../interfaces/api-response';
 export type CustomFieldType = 'string' | 'integer' | 'decimal' | 'date' | 'boolean' | 'select';
 export interface CustomFieldBaseResponse extends ApiResponse {
     id: number;

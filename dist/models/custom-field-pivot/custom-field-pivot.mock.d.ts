@@ -5,7 +5,7 @@ export declare function mockCustomFieldPivotResponse(data?: Partial<CustomFieldP
     has_interval: boolean;
     id: number;
     metadata: Record<string, any> | null;
-    model: import("./custom-field/custom-field").CustomFieldModel;
+    model: import("../custom-field/custom-field").CustomFieldModel;
     object_id: number;
     object_type: string;
     required: boolean;

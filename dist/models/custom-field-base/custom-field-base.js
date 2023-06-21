@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CustomFieldBase = void 0;
-const string_to_date_time_1 = require("../utils/string-to-date-time");
+const string_to_date_time_1 = require("../../utils/string-to-date-time");
 /**
  * Custom field as we get it from the API without it being attached to a model
  */

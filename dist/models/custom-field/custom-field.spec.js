@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const luxon_1 = require("luxon");
-const custom_field_base_1 = require("../custom-field-base");
+const custom_field_base_1 = require("../custom-field-base/custom-field-base");
 const custom_field_mock_1 = require("./custom-field.mock");
 const business_date_1 = require("../../utils/business-date");
 describe('CustomField', () => {

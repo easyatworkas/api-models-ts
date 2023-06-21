@@ -1,6 +1,6 @@
 import { CustomFieldBase, CustomFieldBaseResponse } from './custom-field-base';
-import {CustomFieldPivotResponse} from './custom-field-pivot';
-import {mockCustomFieldPivotResponse} from './custom-field-pivot.mock';
+import {CustomFieldPivotResponse} from '../custom-field-pivot/custom-field-pivot';
+import {mockCustomFieldPivotResponse} from '../custom-field-pivot/custom-field-pivot.mock';
 
 export function mockCustomFieldBaseResponse(data: Partial<CustomFieldBaseResponse> = {}, pivot: Partial<CustomFieldPivotResponse> = {}) {
     return {

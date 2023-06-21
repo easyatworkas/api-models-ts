@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import {stringToDateTime} from '../utils/string-to-date-time';
-import {ApiResponse} from '../interfaces/api-response';
+import {stringToDateTime} from '../../utils/string-to-date-time';
+import {ApiResponse} from '../../interfaces/api-response';
 
 export type CustomFieldType = 'string' | 'integer' | 'decimal' | 'date' | 'boolean' | 'select';
 

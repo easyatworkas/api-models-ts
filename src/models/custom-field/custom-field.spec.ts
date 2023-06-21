@@ -1,6 +1,6 @@
 import { CustomField } from './custom-field';
 import { DateTime } from 'luxon';
-import { CustomFieldBase } from '../custom-field-base';
+import { CustomFieldBase } from '../custom-field-base/custom-field-base';
 import {mockCustomField} from './custom-field.mock';
 import {BusinessDate} from '../../utils/business-date';
 

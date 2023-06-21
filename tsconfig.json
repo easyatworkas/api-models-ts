@@ -1,18 +1,22 @@
 {
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules",
     "dist"
   ],
   "compilerOptions": {
     "esModuleInterop": true,
-    "outDir": "dist",
+    "outFile": "dist/index.js",
     "strict": true,
-    "sourceMap": true,
+    "allowJs": true,
+    "module": "system",
+    "moduleResolution": "Node",
     "declaration": true,
-    "module": "commonjs",
     "target": "es6",
     "lib": [
-      "es2022",
-    ],
+      "es2022"
+    ]
   }
 }

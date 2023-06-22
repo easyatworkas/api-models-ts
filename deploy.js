@@ -14,7 +14,9 @@ function deploy(version) {
     packageJson.version = version;
     fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
 
+    execSync('git stash');
     execSync('git pull');
+    execSync('git stash pop');
     execSync('npm run build');
     execSync('npm run lint');
     execSync('git add .');

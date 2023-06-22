@@ -1,4 +1,4 @@
-import {CustomFieldPivot, CustomFieldPivotResponse} from './custom-field-pivot';
+import { CustomFieldPivot, CustomFieldPivotResponse } from './custom-field-pivot';
 
 export function mockCustomFieldPivotResponse(data: Partial<CustomFieldPivotResponse> = {}) {
     return {
@@ -14,7 +14,7 @@ export function mockCustomFieldPivotResponse(data: Partial<CustomFieldPivotRespo
         validator: null,
         created_at: '1970-01-01 00:00:00',
         updated_at: '1970-01-01 00:00:00',
-        ...data
+        ...data,
     } satisfies CustomFieldPivotResponse;
 }
 

@@ -15,7 +15,7 @@ describe('BaseApiModel', () => {
         }, undefined).customFields.length).toBe(2);
     });
 
-    describe(`clone()`, function () {
+    describe(`clone()`, function() {
         it(`should return a new instance of the same class`, function() {
             const model = new BaseApiModel({}, undefined);
             expect(model.clone()).not.toBe(model);

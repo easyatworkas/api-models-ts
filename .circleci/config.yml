@@ -5,7 +5,6 @@ orbs:
 
 jobs:
   build-and-test:
-    working_directory: /tmp
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -21,8 +20,6 @@ jobs:
             - ./node_modules
       - run:
           command: npm run test:ci
-      - store_artifacts:
-          path: ~/repo/test
 
 workflows:
   build-and-test:

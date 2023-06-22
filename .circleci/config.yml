@@ -19,15 +19,13 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Install JUnit coverage reporter
-          command: npm i -D jest-junit
-      - run:
           name: Run tests with JUnit as reporter
-          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+          command: npm run test:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_test_results:
           path: ./reports/
+
 
 workflows:
   build-and-test:

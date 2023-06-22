@@ -1,43 +1,25 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@5.1.0
+
 jobs:
-  build:
+  build-and-test:
     docker:
-      - image: cimg/node:18.12.1-browsers
+      - image: "cimg/base:stable"
 
     steps:
       - checkout
 
-      - restore_cache:
-          name: "📥 Restoring cache"
-          keys:
-            - ui-v-dependencies-{{ checksum "package-lock.json" }}
-            - ui-v-dependencies-
+      - node/install:
+          node-version: "18.16.1"
+
+      - node/install-packages
 
       - run:
-          name: "📦 Install node modules"
-          command: npm install --audit=false --fund=false
-
-      - save_cache:
-          name: "📤 Save cache"
-          key: ui-v-dependencies-{{ checksum "package-lock.json" }}
-          paths:
-            - node_modules
-            - /home/circleci/.cache/puppeteer
-
-      - run:
-          name: "📁 Make junit directory"
-          command: mkdir ./junit
-
-      - run:
-          name: "🙏 Tests"
           command: npm run test
-          when: always
 
-      - store_test_results:
-          name: "🌐 Uploading test results"
-          path: ./junit
-
-      - store_artifacts:
-          name: "🌐 Uploading artifacts"
-          path: ./junit
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test

@@ -5,19 +5,24 @@ orbs:
 
 jobs:
   build-and-test:
+    working_directory: ~/repo
     docker:
       - image: "cimg/base:stable"
-
     steps:
       - checkout
-
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
       - node/install:
           node-version: "18.16.1"
-
       - node/install-packages
-
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
       - run:
           command: npm run test
+      - store_artifacts:
+          path: ~/repo/test
 
 workflows:
   build-and-test:

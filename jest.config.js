@@ -2,4 +2,20 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  collectCoverage: true,
+  coverageDirectory: 'jest-coverage',
+  collectCoverageFrom: [
+      'src/**/*.ts',
+      '!**/node_modules/**',
+      '!**/dist/**',
+  ],
+  coverageReporters: ["clover", "json", "lcov", "text", "text-summary"],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: -10,
+    },
+  },
 };

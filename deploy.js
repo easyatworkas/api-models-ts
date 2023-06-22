@@ -14,6 +14,7 @@ function deploy(version) {
     packageJson.version = version;
     fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
 
+    execSync('git pull');
     execSync('npm run build');
     execSync('npm run lint');
     execSync('git add .');

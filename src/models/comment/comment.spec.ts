@@ -6,8 +6,8 @@ describe('Comment', () => {
         expect(mockComment()).toBeInstanceOf(Comment);
     });
 
-    describe(`getReadableFields()`, function () {
-        it(`should return a string array`, function () {
+    describe(`getReadableFields()`, function() {
+        it(`should return a string array`, function() {
             expect(mockComment().getReadableFields()).toEqual([ 'body', 'commentable_id', 'commentable_type', 'id', 'user_id', 'user_name' ]);
         });
     });

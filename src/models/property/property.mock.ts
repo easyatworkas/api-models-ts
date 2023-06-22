@@ -1,4 +1,4 @@
-import {Property, PropertyResponse} from './property';
+import { Property, PropertyResponse } from './property';
 
 export function mockPropertyResponse(data: Partial<PropertyResponse> = {}) {
     return {

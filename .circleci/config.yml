@@ -25,6 +25,8 @@ jobs:
             JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_test_results:
           path: ./reports/
+      - store_artifacts:
+          path: ./reports/
 
 
 workflows:

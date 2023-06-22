@@ -15,10 +15,10 @@ class Language {
     }
     getName() {
         try {
-            return new Intl.DisplayNames([this.languageTag], { type: 'language' }).of(this.languageTag) || '';
+            return new Intl.DisplayNames([this.languageTag], { type: 'language' }).of(this.languageTag);
         }
         catch (e) {
-            return '';
+            return undefined;
         }
     }
 }

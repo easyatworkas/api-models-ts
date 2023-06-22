@@ -18,7 +18,7 @@ export class Language {
     ietfBcp47Tag: string;
     languageTag: string;
     iso639_1: string;
-    name: string;
+    name: string | undefined;
     usersCount?: number;
     createdAt: DateTime;
     updatedAt: DateTime;
@@ -36,9 +36,9 @@ export class Language {
 
     private getName() {
         try {
-            return new Intl.DisplayNames([ this.languageTag ], { type: 'language' }).of(this.languageTag) || '';
+            return new Intl.DisplayNames([ this.languageTag ], { type: 'language' }).of(this.languageTag);
         } catch (e) {
-            return '';
+            return undefined;
         }
     }
 }

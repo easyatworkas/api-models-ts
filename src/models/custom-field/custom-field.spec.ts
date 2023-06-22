@@ -1,8 +1,7 @@
-import { CustomField } from './custom-field';
 import { DateTime } from 'luxon';
 import { CustomFieldBase } from '../custom-field-base/custom-field-base';
-import {mockCustomField} from './custom-field.mock';
-import {BusinessDate} from '../../utils/business-date';
+import { mockCustomField } from './custom-field.mock';
+import { BusinessDate } from '../../utils/business-date';
 
 describe('CustomField', () => {
     it('should create an instance', () => {
@@ -87,6 +86,26 @@ describe('CustomField', () => {
             field.value = DateTime.fromObject({ year: 2020, month: 10, day: 10 });
 
             expect(field.toString()).toBe('2020-10-10');
+        });
+    });
+
+    describe(`setSelectOptions()`, function() {
+        it(`should set the correct option values`, function() {
+            const field = mockCustomField({
+                type: 'select',
+            }, {
+                metadata: {
+                    options: {
+                        1: 'Option 1',
+                        2: 'Option 2',
+                    },
+                },
+            });
+
+            expect(field.selectOptions).toEqual([
+                { value: '1', textKey: 'Option 1', textNs: 'custom_fields' },
+                { value: '2', textKey: 'Option 2', textNs: 'custom_fields' },
+            ]);
         });
     });
 

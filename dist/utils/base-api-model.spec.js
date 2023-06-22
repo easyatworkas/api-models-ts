@@ -10,6 +10,8 @@ describe('BaseApiModel', () => {
         expect(new base_api_model_1.BaseApiModel({
             cf_test: (0, custom_field_mock_1.mockCustomFieldResponse)(),
             cf_test_2: (0, custom_field_mock_1.mockCustomFieldResponse)(),
+            not_cf: 'test',
+            cf_error: null,
         }, undefined).customFields.length).toBe(2);
     });
     describe(`clone()`, function () {

@@ -16,13 +16,7 @@ class CustomFieldPivot {
         this.validator = data.validator;
         this.createdAt = data.created_at ? (0, string_to_date_time_1.stringToDateTime)(data.created_at) : null;
         this.updatedAt = data.updated_at ? (0, string_to_date_time_1.stringToDateTime)(data.updated_at) : null;
-        try {
-            this.stringifiedMetadata = data.metadata ? JSON.stringify(data.metadata) : '';
-        }
-        catch (e) {
-            console.error(e);
-            this.stringifiedMetadata = '';
-        }
+        this.stringifiedMetadata = data.metadata ? JSON.stringify(data.metadata) : '';
     }
 }
 exports.CustomFieldPivot = CustomFieldPivot;

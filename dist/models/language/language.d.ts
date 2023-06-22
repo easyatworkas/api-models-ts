@@ -14,7 +14,7 @@ export declare class Language {
     ietfBcp47Tag: string;
     languageTag: string;
     iso639_1: string;
-    name: string;
+    name: string | undefined;
     usersCount?: number;
     createdAt: DateTime;
     updatedAt: DateTime;

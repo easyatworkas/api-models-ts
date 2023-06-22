@@ -10,6 +10,8 @@ describe('BaseApiModel', () => {
         expect(new BaseApiModel({
             cf_test: mockCustomFieldResponse(),
             cf_test_2: mockCustomFieldResponse(),
+            not_cf: 'test',
+            cf_error: null,
         }, undefined).customFields.length).toBe(2);
     });
 

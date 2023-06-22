@@ -1,5 +1,5 @@
-import {CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue} from '../models/custom-field/custom-field';
-import {ApiResponse} from '../interfaces/api-response';
+import { CustomField, CustomFieldModel, CustomFieldResponse, CustomFieldValue } from '../models/custom-field/custom-field';
+import { ApiResponse } from '../interfaces/api-response';
 
 /**
  * The purpose of this is to extend API models with simple functionality that don't interfere with the model or response in any big way.
@@ -35,8 +35,7 @@ export class BaseApiModel<Response extends ApiResponse, Model> {
     }
 
     getCustomFieldValue(key: string): CustomFieldValue {
-        const customField = this.customFields?.find((cf) => cf.key === key);
-
+        const customField = this.customFields.find((cf) => cf.key === key);
         return !customField ? null : customField.value;
     }
 }

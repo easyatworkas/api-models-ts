@@ -28,8 +28,7 @@ class BaseApiModel {
         return new (this.constructor)(this._response);
     }
     getCustomFieldValue(key) {
-        var _a;
-        const customField = (_a = this.customFields) === null || _a === void 0 ? void 0 : _a.find((cf) => cf.key === key);
+        const customField = this.customFields.find((cf) => cf.key === key);
         return !customField ? null : customField.value;
     }
 }

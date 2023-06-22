@@ -1,4 +1,4 @@
-import {Language, LanguageResponse} from './language';
+import { Language, LanguageResponse } from './language';
 
 export function mockLanguageResponse(data: Partial<LanguageResponse> = {}) {
     return {
@@ -9,7 +9,7 @@ export function mockLanguageResponse(data: Partial<LanguageResponse> = {}) {
         users_count: 0,
         created_at: '1970-01-01 00:00:00',
         updated_at: '1970-01-01 00:00:00',
-        ...data
+        ...data,
     } satisfies LanguageResponse;
 }
 

@@ -73,6 +73,24 @@ describe('CustomField', () => {
             expect(field.toString()).toBe('2020-10-10');
         });
     });
+    describe(`setSelectOptions()`, function () {
+        it(`should set the correct option values`, function () {
+            const field = (0, custom_field_mock_1.mockCustomField)({
+                type: 'select',
+            }, {
+                metadata: {
+                    options: {
+                        1: 'Option 1',
+                        2: 'Option 2',
+                    },
+                },
+            });
+            expect(field.selectOptions).toEqual([
+                { value: '1', textKey: 'Option 1', textNs: 'custom_fields' },
+                { value: '2', textKey: 'Option 2', textNs: 'custom_fields' },
+            ]);
+        });
+    });
     describe(`clone()`, function () {
         it(`should return a new custom field`, function () {
             const field = (0, custom_field_mock_1.mockCustomField)();

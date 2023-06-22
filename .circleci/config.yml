@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  build-and-test:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - node/install:
+          node-version: "18.16.1"
+      - node/install-packages
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run tests with JUnit as reporter
+          command: npm run test:ci
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/
+      - store_test_results:
+          path: ./reports/
+      - store_artifacts:
+          path: ./reports/
+
+
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test

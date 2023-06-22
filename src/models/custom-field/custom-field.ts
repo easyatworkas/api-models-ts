@@ -1,9 +1,9 @@
 import { DateTime } from 'luxon';
 import { CustomFieldPivot, CustomFieldPivotResponse } from '../custom-field-pivot/custom-field-pivot';
 import { CustomFieldBase, CustomFieldBaseResponse } from '../custom-field-base/custom-field-base';
-import {stringToDateTime} from '../../utils/string-to-date-time';
-import {BusinessDate} from '../../utils/business-date';
-import {BusinessDateString} from '../../types/business-date-string';
+import { stringToDateTime } from '../../utils/string-to-date-time';
+import { BusinessDate } from '../../utils/business-date';
+import { BusinessDateString } from '../../types/business-date-string';
 
 export type CustomFieldModel = 'employee' | 'absence' | 'emergency_contact' | 'paid_time' | 'shift' | 'contract';
 export type CustomFieldValue = string | number | boolean | BusinessDate | null;

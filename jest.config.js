@@ -9,7 +9,7 @@ module.exports = {
       '!**/node_modules/**',
       '!**/dist/**',
   ],
-  coverageReporters: ["json", "lcov", "jest-junit", "text", "text-summary"],
+  coverageReporters: ["json", "text", "text-summary"],
   coverageThreshold: {
     global: {
       branches: 80,

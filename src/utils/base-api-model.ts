@@ -35,8 +35,7 @@ export class BaseApiModel<Response extends ApiResponse, Model> {
     }
 
     getCustomFieldValue(key: string): CustomFieldValue {
-        const customField = this.customFields?.find((cf) => cf.key === key);
-
+        const customField = this.customFields.find((cf) => cf.key === key);
         return !customField ? null : customField.value;
     }
 }

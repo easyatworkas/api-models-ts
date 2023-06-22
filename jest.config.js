@@ -6,6 +6,7 @@ module.exports = {
   coverageDirectory: 'jest-coverage',
   collectCoverageFrom: [
       'src/**/*.ts',
+      '!src/**/*.mock.ts',
       '!**/node_modules/**',
       '!**/dist/**',
   ],
@@ -15,7 +16,7 @@ module.exports = {
       branches: 80,
       functions: 80,
       lines: 80,
-      statements: -10,
+      statements: 80,
     },
   },
 };

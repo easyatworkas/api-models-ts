@@ -11,3 +11,4 @@ export declare class BaseApiModel<Response extends ApiResponse, Model> {
     clone(): Model;
     getCustomFieldValue(key: string): CustomFieldValue;
 }
+//# sourceMappingURL=base-api-model.d.ts.map

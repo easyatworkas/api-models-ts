@@ -28,3 +28,4 @@ export declare function mockCustomFieldResponse(data?: Partial<CustomFieldRespon
     model: string;
 };
 export declare function mockCustomField(data?: Partial<CustomFieldResponse>, pivot?: Partial<CustomFieldPivotResponse>): CustomField;
+//# sourceMappingURL=custom-field.mock.d.ts.map

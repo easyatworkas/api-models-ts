@@ -20,3 +20,4 @@ export declare class Property extends BaseApiModel<PropertyResponse, Property> {
     to: DateTime | null;
     constructor(data: PropertyResponse);
 }
+//# sourceMappingURL=property.d.ts.map

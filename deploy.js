@@ -18,6 +18,7 @@ function deploy(version) {
     execSync('npm run lint');
     execSync('git add .');
     execSync(`git commit -m "Release ${version}"`);
+    execSync(`git push`);
     execSync(`git tag ${version}`);
     execSync(`git push --tags`);
 }

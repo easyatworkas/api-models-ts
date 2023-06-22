@@ -21,3 +21,4 @@ export declare class Language {
     constructor(data: LanguageResponse);
     private getName;
 }
+//# sourceMappingURL=language.d.ts.map

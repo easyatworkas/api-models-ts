@@ -14,3 +14,4 @@ export declare function mockCustomFieldPivotResponse(data?: Partial<CustomFieldP
     updated_at: string | null;
 };
 export declare function mockCustomFieldPivot(data?: Partial<CustomFieldPivotResponse>): CustomFieldPivot;
+//# sourceMappingURL=custom-field-pivot.mock.d.ts.map

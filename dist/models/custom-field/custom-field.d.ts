@@ -47,3 +47,4 @@ export declare class CustomField extends CustomFieldBase {
     private setBooleanValue;
     private setDateValue;
 }
+//# sourceMappingURL=custom-field.d.ts.map

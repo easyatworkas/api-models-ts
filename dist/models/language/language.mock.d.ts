@@ -9,3 +9,4 @@ export declare function mockLanguageResponse(data?: Partial<LanguageResponse>): 
     updated_at: string;
 };
 export declare function mockLanguage(data?: Partial<LanguageResponse>): Language;
+//# sourceMappingURL=language.mock.d.ts.map

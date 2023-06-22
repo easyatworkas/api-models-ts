@@ -6,3 +6,4 @@ export declare class BusinessDate {
     constructor(value: DateTime | BusinessDateString);
     toString(): string;
 }
+//# sourceMappingURL=business-date.d.ts.map

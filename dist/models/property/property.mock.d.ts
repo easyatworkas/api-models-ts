@@ -9,3 +9,4 @@ export declare function mockPropertyResponse(data?: Partial<PropertyResponse>): 
     to: string | null;
 };
 export declare function mockProperty(data?: Partial<PropertyResponse>): Property;
+//# sourceMappingURL=property.mock.d.ts.map

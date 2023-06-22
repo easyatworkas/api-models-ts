@@ -25,3 +25,4 @@ export declare class CustomFieldBase {
     deletedAt: DateTime | null;
     constructor(data: CustomFieldBaseResponse);
 }
+//# sourceMappingURL=custom-field-base.d.ts.map

@@ -31,3 +31,4 @@ export declare class CustomFieldPivot {
     updatedAt: DateTime | null;
     constructor(data: CustomFieldPivotResponse);
 }
+//# sourceMappingURL=custom-field-pivot.d.ts.map

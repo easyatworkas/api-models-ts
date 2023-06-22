@@ -1,0 +1,1 @@
+{"version":3,"file":"readable-fields.d.ts","sourceRoot":"","sources":["../../src/interfaces/readable-fields.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,cAAc,CAAC,aAAa;IACzC,EAAE,EAAE,MAAM,CAAC;IACX,QAAQ,CAAC,SAAS,EAAE,QAAQ,CAAC,aAAa,GAAG;QAAE,CAAC,GAAG,EAAE,MAAM,GAAG,GAAG,CAAA;KAAE,CAAC,CAAC;IAErE,iBAAiB,IAAI,CAAC,MAAM,aAAa,GAAG,MAAM,CAAC,EAAE,CAAC;CACzD"}

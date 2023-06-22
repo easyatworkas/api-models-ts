@@ -1,0 +1,1 @@
+{"version":3,"file":"absence-type.mock.d.ts","sourceRoot":"","sources":["../../../src/models/absence-type/absence-type.mock.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,mBAAmB,EAAE,MAAM,gBAAgB,CAAC;AAElE,wBAAgB,uBAAuB,CAAC,IAAI,GAAE,OAAO,CAAC,mBAAmB,CAAM,GAAG,mBAAmB,CAUpG;AAED,wBAAgB,eAAe,CAAC,IAAI,GAAE,OAAO,CAAC,mBAAmB,CAAM,eAEtE"}
